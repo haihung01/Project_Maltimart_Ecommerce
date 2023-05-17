@@ -96,7 +96,7 @@ const Home = () => {
             <section className="timer_count">
                 <Container>
                     <Row>
-                        <Col lg='6' md='6'>
+                        <Col lg='6' md='12' className='count_down-col'>
                             <div className="clock_top-content">
                                 <h4 className='text-white fs-6 mb-2'>Limited Offer</h4>
                                 <h3 className='text-white fs-5 mb-3'>Quality Armchair</h3>

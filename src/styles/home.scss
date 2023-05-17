@@ -75,6 +75,18 @@
     .clock_top-content {
         text-align: center;
     }
+
+    .clock_top-content h4 {
+        font-style: 0.9rem !important;
+    }
+
+    .clock_top-content h3 {
+        font-size: 1rem !important;
+    }
+
+    .count_down-col {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:768px) {

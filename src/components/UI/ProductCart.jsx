@@ -8,7 +8,7 @@ const ProductCart = ({ item }) => {
     return (
         <Col lg='3' md='4' className='mb-2'>
             <div className='product_item'>
-                <div className='product_img'> q q q q
+                <div className='product_img'>
                     <motion.img whileHover={{ scale: 0.9 }} src={item.imgUrl} alt='' />
                 </div>
                 <div className='p-2 product_info'>
