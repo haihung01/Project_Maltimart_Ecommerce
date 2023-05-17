@@ -57,7 +57,7 @@ const Home = () => {
                                     adipisicing elit. Sunt, amet! Architecto dolorum consequuntur
                                     exercitationem commodi ipsa praesentium aspernatur velit ratione!
                                     Illum odit autem tempore consequatur veniam ab ipsa dolorum facilis?</p>
-                                <motion.button whileTap={{ scale: 1.2 }} className='buy_btn'><Link to='shop'>SHOP NOW</Link></motion.button>
+                                <motion.button whileTap={{ scale: 1.2 }} className='buy_btn'><Link to='/shop'>SHOP NOW</Link></motion.button>
                             </div>
                         </Col>
                         <Col lg='6' md='6'>
