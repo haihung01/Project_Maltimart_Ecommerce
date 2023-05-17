@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../../styles/clock.scss'
 
 const Clock = () => {
 
@@ -10,12 +11,19 @@ const Clock = () => {
     let interval;
 
     const countDown = () => {
-        const destination = new Date('May 17, 2023').getTime()
+        const destination = new Date('May 18, 2023, 24:00').getTime() //ms
+        // console.log("🚀 ~ file: Clock.jsx:14 ~ countDown ~ destination:", destination)
+        // const now = new Date().get()
+        // console.log("🚀 ~ file: Clock.jsx:16 ~ countDown ~ now:", now)
+
 
         interval = setInterval(() => {
             const now = new Date().getTime()
             const different = destination - now
+            // console.log("🚀 ~ file: Clock.jsx:20 ~ interval=setInterval ~ different:", different)
+
             const days = Math.floor(different / (1000 * 60 * 60 * 24))
+            // console.log("🚀 ~ file: Clock.jsx:20 ~ interval=setInterval ~ days:", days)
 
             const hours = Math.floor(different % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
 
@@ -33,9 +41,9 @@ const Clock = () => {
         })
     }
 
-    // useEffect(() => {
-    //     countDown()
-    // })
+    useEffect(() => {
+        countDown()
+    }, [])
 
 
     return (

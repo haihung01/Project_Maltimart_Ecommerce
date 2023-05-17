@@ -58,3 +58,46 @@
 .store_btn a:hover {
     color: var(--primary-color);
 }
+
+@media only screen and (max-width: 992px) {
+    .hero_content h2 {
+        font-size: 2rem;
+    }
+
+    .section_title {
+        font-style: 1.7rem;
+    }
+
+    .counter_img {
+        display: none;
+    }
+
+    .clock_top-content {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero_content h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero_content p {
+        font-size: .9rem;
+    }
+
+    .buy_btn {
+        font-size: .9rem;
+    }
+
+    .section_title {
+        font-style: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero_content {
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
+}

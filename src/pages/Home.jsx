@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 import Services from '../services/Services';
 import ProductsList from '../components/UI/ProductsList';
 import products from '../assets/data/products'
-import counterImgList from '../assets/images/counter-timer-img.png'
+import counterImg from '../assets/images/counter-timer-img.png'
 import Clock from '../components/UI/Clock';
 
 const Home = () => {
@@ -110,8 +110,8 @@ const Home = () => {
                                 </Link>
                             </motion.button>
                         </Col>
-                        <Col lg='6' md='6' className='text-end'>
-                            <img src={counterImgList} alt='' />
+                        <Col lg='6' md='12' className='text-end counter_img'>
+                            <img src={counterImg} alt='' />
                         </Col>
 
                     </Row>
