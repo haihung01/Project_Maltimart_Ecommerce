@@ -10,7 +10,7 @@ const Clock = () => {
     let interval;
 
     const countDown = () => {
-        const destination = new Date('May 16, 2023').getTime()
+        const destination = new Date('May 17, 2023').getTime()
 
         interval = setInterval(() => {
             const now = new Date().getTime()
@@ -33,9 +33,9 @@ const Clock = () => {
         })
     }
 
-    useEffect(() => {
-        countDown()
-    })
+    // useEffect(() => {
+    //     countDown()
+    // })
 
 
     return (

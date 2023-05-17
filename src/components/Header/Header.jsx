@@ -35,7 +35,6 @@ const Header = () => {
                             <img src={logo} alt='logo' />
                             <div>
                                 <h1>Multimart</h1>
-
                             </div>
                         </div>
 
