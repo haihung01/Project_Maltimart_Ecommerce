@@ -1,12 +1,14 @@
 import React from 'react';
+import CommonSection from '../components/UI/CommonSection';
+import Helmet from '../components/Helmet/Helmet';
 
 const Shop = () => {
-    return (
-        <div>
-            <img src='https://play-lh.googleusercontent.com/FfwD12bTR1qvgnN7uUl9peanNII1WmCbK1FA523OUJQfmnSjXGaYVXaWDPoxDC-hHg' />
-            <h1 style={{ textAlign: 'center' }}>Chưa làm tới mừ ~.~ </h1>
-        </div>
-    );
+    return <>
+        <Helmet title='Shop'>
+            <CommonSection title='Products' />
+
+        </Helmet>
+    </>
 };
 
-export default Shop;
+export default Shop;    

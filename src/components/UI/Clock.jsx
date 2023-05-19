@@ -11,7 +11,7 @@ const Clock = () => {
     let interval;
 
     const countDown = () => {
-        const destination = new Date('May 18, 2023, 24:00').getTime() //ms
+        const destination = new Date('May 20 , 2023').getTime()//ms
         // console.log("🚀 ~ file: Clock.jsx:14 ~ countDown ~ destination:", destination)
         // const now = new Date().get()
         // console.log("🚀 ~ file: Clock.jsx:16 ~ countDown ~ now:", now)
@@ -31,7 +31,14 @@ const Clock = () => {
 
             const seconds = Math.floor(different % (1000 * 60) / 1000)
 
-            if (destination < 0) clearInterval(interval.current)
+            if (different < 0) {
+                clearInterval(interval.current)
+
+                setDay(0)
+                setHours(0)
+                setMinutes(0)
+                setSeconds(0)
+            }
             else {
                 setDay(days)
                 setHours(hours)
@@ -39,6 +46,7 @@ const Clock = () => {
                 setSeconds(seconds)
             }
         })
+        console.log("🚀 ~ file: Clock.jsx:42 ~ interval=setInterval ~ destination:", destination)
     }
 
     useEffect(() => {
