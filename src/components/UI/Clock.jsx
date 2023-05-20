@@ -11,7 +11,7 @@ const Clock = () => {
     let interval;
 
     const countDown = () => {
-        const destination = new Date('May 20 , 2023').getTime()//ms
+        const destination = new Date('May 23 , 2023').getTime()//ms
         // console.log("🚀 ~ file: Clock.jsx:14 ~ countDown ~ destination:", destination)
         // const now = new Date().get()
         // console.log("🚀 ~ file: Clock.jsx:16 ~ countDown ~ now:", now)
@@ -46,7 +46,7 @@ const Clock = () => {
                 setSeconds(seconds)
             }
         })
-        console.log("🚀 ~ file: Clock.jsx:42 ~ interval=setInterval ~ destination:", destination)
+        // console.log("🚀 ~ file: Clock.jsx:42 ~ interval=setInterval ~ destination:", destination)
     }
 
     useEffect(() => {
