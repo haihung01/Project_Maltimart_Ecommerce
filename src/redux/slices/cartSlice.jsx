@@ -5,51 +5,39 @@ const initialState = {
     cartItems: [],
     totalAmount: 0,
     totalQuantity: 0
+
 };
 
 const cartSlice = createSlice({
     name: 'cart',
     initialState,
     reducers: {
-        addItem: (state, { payload }) => {
-            // console.log(state.cartItems)
-            // console.log(parseInt(payload.price.replace(/\D/g, '')))
-
-            const newItem = payload;
-
+        addItem: (state, action) => {
+            console.log(action.payload)
+            const newItem = action.payload
             const existingItem = state.cartItems.find(
                 (item) => item.id === newItem.id
             );
-            const existItemIndex = state.cartItems.findIndex(
-                (item) => item.id === newItem.id
-            );
-            console.log(existItemIndex, "index")
-
-
             state.totalQuantity++;
 
             if (!existingItem) {
-                state.cartItems = [...state.cartItems, {
+                state.cartItems.push({
                     id: newItem.id,
                     productName: newItem.productName,
                     imgUrl: newItem.imgUrl,
                     price: newItem.price,
                     quantity: 1,
-                    totalPrice: parseInt(newItem.price.replace(/\D/g, '')),
-                }]
-                console.log(state.cartItems, "old");
+                    totalPrice: newItem.price
+                })
             }
 
             else {
-                existingItem.quantity++;
-                existingItem.totalPrice = parseInt(existingItem.totalPrice) + parseInt(newItem.price.replace(/\D/g, ''))
-
-                console.log(state.cartItems, "cai co roi")
-
+                existingItem.totalQuantity++
+                existingItem.totalPrice = Number(existingItem.totalPrice) + Number(newItem.price)
             }
 
-            state.totalAmount = state.cartItems.reduce(
-                (total, item) => total + Number(item.price) * Number(item.quantity), 0
+            state.totalAmount = state.cartItems.reduce((total, item) => total +
+                Number(item.price) * Number(item.quantity), 0
             );
 
         },
@@ -67,6 +55,7 @@ const cartSlice = createSlice({
             );
         },
     },
+
 })
 
 export const cartActions = cartSlice.actions;

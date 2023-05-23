@@ -55,18 +55,22 @@ const Cart = () => {
 
                         <Col lg='3'>
                             <div>
-                                <h6 className='d-flex align-items-center justify-content-between'>Subtotal</h6>
-                                <span className='fs-4 fw-bold'>${totalAmount}</span>
+                                <h6 className='d-flex align-items-center justify-content-between'>Subtotal
+                                    <span className='fs-4 fw-bold'>${totalAmount}</span>
+                                </h6>
+
                             </div>
 
 
-                            <p>taxes and shipping will calculate in checkout</p>
+                            <p className='fs-6 mt-2'>taxes and shipping will calculate in checkout</p>
                             <div>
-                                <button className="buy_btn">
-                                    <Link to='/shop'>Continue Shopping</Link>
-                                </button>
-                                <button className="buy_btn">
+
+                                <button className="buy_btn w-100 ">
                                     <Link to='/checkout'>Checkout</Link>
+                                </button>
+
+                                <button className="buy_btn w-100 mt-3">
+                                    <Link to='/shop'>Continue Shopping</Link>
                                 </button>
                             </div>
                         </Col>
@@ -90,7 +94,7 @@ const Tr = ({ item }) => {
         <tr>
             <td><img src={item.imgUrl} alt='' /></td>
             <td>{item.productName}</td>
-            <td>{item.price}</td>
+            <td>${item.price}</td>
             <td>{item.quantity}</td>
             <td>
                 <motion.i
