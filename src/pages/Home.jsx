@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import Helmet from '../components/Helmet/Helmet';
 import { Container, Row, Col } from 'reactstrap';
-import heroImg from '../assets/images/hero-img.png'
+import heroImg from '../assets/images/img_book/ZzzR-doc-gia-scaled.webp'
 import '../styles/home.scss';
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import Services from '../services/Services';
 import ProductsList from '../components/UI/ProductsList';
 import products from '../assets/data/products'
-import counterImg from '../assets/images/counter-timer-img.png'
+import counterImg from '../assets/images/img_book/1628072111536-1534126003236-4.png';
 import Clock from '../components/UI/Clock';
 
 const Home = () => {

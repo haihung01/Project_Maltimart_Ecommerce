@@ -1,32 +1,32 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
+import productImg01 from "../images/img_book/HOM NAY.jpg";
+import productImg02 from "../images/img_book/tieu-thuyet-viet-nam-19.jpg";
+import productImg03 from "../images/img_book/an-may-di-vang.png";
 
-import productImg04 from "../images/single-sofa-01.jpg";
-import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
+import productImg04 from "../images/img_book/them-yeu-ha-noi-qua-nhung-cuon-sach-viet-ve-ha-noi-02.jpg";
+import productImg05 from "../images/img_book/images.jpg";
+import productImg06 from "../images/img_book/them-yeu-ha-noi-qua-nhung-cuon-sach-viet-ve-ha-noi-01.jpg";
+import productImg007 from "../images/img_book/tieu-thuyet-viet-nam-20.jpg";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+import productImg07 from "../images/img_book/HOM NAY.jpg";
+import productImg08 from "../images/img_book/song-o-day-song.png";
+import productImg09 from "../images/img_book/Dat_Rung_Phuong_Nam.gif";
+import productImg10 from "../images/img_book/Mua_la_rung_trong_vuon.jpg";
 
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
+import productImg13 from "../images/img_book/thoi-xa-vang.jpg";
+import productImg14 from "../images/img_book/18559.jpg";
+import productImg15 from "../images/img_book/tieu-thuyet-viet-nam-1.jpg";
+import productImg16 from "../images/img_book/HOM NAY.jpg";
+import productImg17 from "../images/img_book/HOM NAY.jpg";
+import productImg18 from "../images/img_book/HOM NAY.jpg";
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
+import productImg19 from "../images/img_book/HOM NAY.jpg";
+import productImg20 from "../images/img_book/HOM NAY.jpg";
+import productImg21 from "../images/img_book/HOM NAY.jpg";
+import productImg22 from "../images/img_book/HOM NAY.jpg";
 
-import productImg23 from "../images/wireless-01.png";
+import productImg23 from "../images/img_book/HOM NAY.jpg";
 
-import productImg25 from "../images/wireless-03.png";
+import productImg25 from "../images/img_book/HOM NAY.jpg";
 
 const products = [
   {
